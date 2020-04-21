@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background: #272635;
+    color: #2C2C2C;
+}
+
+.tabs {
+    min-width: 100vw;
+    display: flex;
+}
+
+.tabs>ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tabs>ul li {
+    display: block;
+    text-align: center;
+}
+
+.tabs>ul li a {
+    display: block;
+    text-decoration: none;
+    background: #11111A;
+    padding: 1rem 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.2s ease-in-out;
+}
+
+.tabs>ul li a.active {
+    background: #fff;
+    color: #2C2C2C;
+}
+
+.tabs>ul li a:hover:not(.active) {
+    color: #fff;
+}
+
+.tabs section {
+    background: #fff;
+    padding: 1.5rem 2.5rem;
+    display: none;
+}
+
+.tabs section.active {
+    display: block;
+}
